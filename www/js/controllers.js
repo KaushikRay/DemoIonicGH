@@ -1,4 +1,4 @@
-angular.module('starter.controllers', ['forceng'])
+angular.module('starter.controllers', ['starter.services', 'forceng'])
 
     .controller('AppCtrl', function ($scope, force) {
 
@@ -8,18 +8,14 @@ angular.module('starter.controllers', ['forceng'])
 
     })
 
-    .controller('ContactListCtrl', function ($scope, force) {
+    .controller('ContactListCtrl', ['$scope', 'force', 'ForceService', function ($scope, force, ForceService) {
+        ForceService.getAllContacts().then(
+            function(data) {
+                $scope.contacts = data.records;    
+            }
+        );
 
-        force.query('select id, name, title from contact limit 50').then(
-            function (data) {
-                $scope.contacts = data.records;
-            },
-            function (error) {
-                alert("Error Retrieving Contacts");
-                console.log(error);
-            });
-
-    })
+    }])
 
     .controller('ContactCtrl', function ($scope, $stateParams, force) {
 
@@ -118,15 +114,6 @@ angular.module('starter.controllers', ['forceng'])
                 { name: 'Lamarr the Headcrab' },
               ];
 
-              // $ionicModal.fromTemplateUrl('templates/modal.html', {
-              //   scope: $scope
-              // }).then(function(modal) {
-              //   $scope.modal = modal;
-              //   marker.addListener('click', function() {
-              //     console.log('helllos from marker');
-              //     modal.show();
-              //   });
-              // });
               $ionicModal.fromTemplateUrl('templates/bottom-sheet.html', {
                 scope: $scope,
                 viewType: 'bottom-sheet',
