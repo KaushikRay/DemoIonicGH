@@ -8,14 +8,14 @@ angular.module('starter.controllers', ['starter.services', 'forceng'])
 
     })
 
-    .controller('ContactListCtrl', ['$scope', 'force', 'ForceService', function ($scope, force, ForceService) {
+    .controller('ContactListCtrl', function ($scope, force, ForceService) {
         ForceService.getAllContacts().then(
             function(data) {
                 $scope.contacts = data.records;    
             }
         );
 
-    }])
+    })
 
     .controller('ContactCtrl', function ($scope, $stateParams, force) {
 
@@ -84,12 +84,41 @@ angular.module('starter.controllers', ['starter.services', 'forceng'])
         console.log('hello --->');
     })
 
-    .controller('MyLocationCtrl', function($scope, $stateParams, force, $cordovaGeolocation, $ionicModal) {
+    .controller('MyLocationCtrl', function(
+        $scope,
+        $stateParams,
+        force,
+        $cordovaGeolocation,
+        $ionicModal,
+        GoogleMapService,
+        ForceService,
+        $q
+    ) {
         console.log('this is in my location page');
-        var options = {timeout: 10000, enableHighAccuracy: true};
-        $cordovaGeolocation.getCurrentPosition(options).then(function(position){
- 
+        var currentPosition = GoogleMapService.getCurrentLocation();
+
+        var restaurantModal = $ionicModal.fromTemplateUrl('templates/bottom-sheet.html', {
+          scope: $scope,
+          viewType: 'bottom-sheet',
+          animation: 'slide-in-up'
+        });
+
+        var allContacts = ForceService.getAllContactsWithGeo();
+        var promises = [];
+        promises.push(currentPosition);
+        promises.push(allContacts);
+        promises.push(restaurantModal);
+
+        var allMarkers = [];
+        var allContactDetails = [];
+        var currentPositionLatLong;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var directionsService = new google.maps.DirectionsService;
+        currentPosition.then(
+          function(position) {
+            console.log('position data -->', position);
             var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+            currentPositionLatLong = latLng;
 
             var mapOptions = {
               center: latLng,
@@ -98,50 +127,86 @@ angular.module('starter.controllers', ['starter.services', 'forceng'])
             };
 
             $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
-            //Wait until the map is loaded
-            google.maps.event.addListenerOnce($scope.map, 'idle', function(){
-             
-              var marker = new google.maps.Marker({
-                  map: $scope.map,
-                  animation: google.maps.Animation.DROP,
-                  position: latLng
-              });
-
-              $scope.contacts = [
-                { name: 'Gordon Freeman' },
-                { name: 'Barney Calhoun' },
-                { name: 'Lamarr the Headcrab' },
-              ];
-
-              $ionicModal.fromTemplateUrl('templates/bottom-sheet.html', {
-                scope: $scope,
-                viewType: 'bottom-sheet',
-                animation: 'slide-in-up'
-              }).then(function(modal) {
-                $scope.modal = modal;
-                marker.addListener('click', function() {
-                  console.log('helllos from marker');
-                  modal.show();
-                });
-              });
-              
-              $scope.createContact = function(u) {        
-                $scope.contacts.push({ name: u.firstName + ' ' + u.lastName });
-                $scope.modal.hide();
-                console.log('$scope.contacts -->', $scope.contacts);
-              }; 
-             
+            directionsDisplay.setMap($scope.map);
+            //var bounds = new google.maps.LatLngBounds();
+            var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+            var currentPositionMarker = new google.maps.Marker({
+              map: $scope.map,
+              animation: google.maps.Animation.DROP,
+              position: latLng,
+              id: 'currentPosition',
+              icon: image
             });
 
-        }, function(error){
-            console.log("Could not get location");
+            allContacts.then(
+              function(contacts) {
+                
+                console.log('contacts final -->', contacts);
+                for (var i=0; i<contacts.records.length; i++) {
+                  var contact = contacts.records[i];
+                  console.log('single contact -->', contact.MailingLatitude, contact.MailingLongitude);
+                  var contactlatLng = new google.maps.LatLng(contact.MailingLatitude, contact.MailingLongitude);
+                  var contactInfo = {};
+                  var marker = new google.maps.Marker({
+                    map: $scope.map,
+                    animation: google.maps.Animation.DROP,
+                    position: contactlatLng,
+                    id: contact.Id
+                  });
+
+                  contactInfo.marker = marker;
+                  contactInfo.recordDetails = contact;
+                  contactInfo.currrentPosition = currentPositionMarker;
+                  
+                  allMarkers.push(marker);
+                  allContactDetails.push(contactInfo);
+
+                  // Set boundary for markers in map
+                  //bounds.extend(contactlatLng);
+                }
+
+                // Fit map based on markers
+                //$scope.map.fitBounds(bounds);
+              }
+            );
+
+          }, 
+          function(error) {
+            console.log("Could not get location" + error);
+          }
+        );
+
+        // Add listener for marker pop up once all promises resolved
+        $q.all(promises).then(
+          function(values) {
+            // console.log('first -->', values[0]);
+            // console.log('second -->', values[1]);
+            // console.log('third -->', values[2]);
+            var detailModal = values[2];
+
+            $scope.modal = detailModal;
+            for (var i=0; i<allContactDetails.length; i++) {
+              console.log('initial all contact details -->', allContactDetails[i]);
+              with ({contactInfoVal : allContactDetails[i]}) {
+                google.maps.event.addListener(contactInfoVal.marker, 'click', function() {
+                  console.log('inside final contact info -->', contactInfoVal.currentPosition);
+                  $scope.contactName = contactInfoVal.recordDetails.Name;
+                  detailModal.show();
+                  GoogleMapService.calculateAndDisplayRoute(
+                    currentPositionLatLong,
+                    contactInfoVal.marker.getPosition(),
+                    directionsService,
+                    directionsDisplay
+                  );
+                });
+              }
+            }
         });
 
     })
 
 
-    .directive('ionBottomSheet', [function() {
+  .directive('ionBottomSheet', [function() {
     return {
       restrict: 'E',
       transclude: true,
@@ -150,11 +215,11 @@ angular.module('starter.controllers', ['starter.services', 'forceng'])
       template: '<div class="modal-wrapper" ng-transclude></div>'  
     };
   }])
-.directive('ionBottomSheetView', function() {
-  return {
-    restrict: 'E',
-    compile: function(element) {
-      element.addClass('bottom-sheet modal');
-    }
-  };
-});
+  .directive('ionBottomSheetView', function() {
+    return {
+      restrict: 'E',
+      compile: function(element) {
+        element.addClass('bottom-sheet modal');
+      }
+    };
+  });
