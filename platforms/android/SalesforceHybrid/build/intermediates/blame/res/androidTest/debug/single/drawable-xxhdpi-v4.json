@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/ic_fp_40px.png",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xxhdpi-v4/ic_fp_40px.png"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/sf__icon.png",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xxhdpi-v4/sf__icon.png"
+    }
+]

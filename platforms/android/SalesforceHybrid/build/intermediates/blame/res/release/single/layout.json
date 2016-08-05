@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/layout/sf__custom_server_url.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/layout/sf__custom_server_url.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/layout/sf__manage_space.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/layout/sf__manage_space.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/layout/sf__inspector_result_cell.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SmartStore/unspecified/res/layout/sf__inspector_result_cell.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/layout/sf__passcode.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/layout/sf__passcode.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/layout/sf__server_picker_list.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/layout/sf__server_picker_list.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/layout/sf__fingerprint_dialog.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/layout/sf__fingerprint_dialog.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/layout/sf__login.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/layout/sf__login.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/layout/sf__account_switcher.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/layout/sf__account_switcher.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/layout/sf__inspector.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SmartStore/unspecified/res/layout/sf__inspector.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/layout/sf__server_picker.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/layout/sf__server_picker.xml"
+    }
+]

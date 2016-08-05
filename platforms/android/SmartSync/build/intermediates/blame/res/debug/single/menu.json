@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartSync/build/intermediates/res/merged/debug/menu/sf__clear_custom_url.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartSync/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/menu/sf__clear_custom_url.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartSync/build/intermediates/res/merged/debug/menu/sf__login.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartSync/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/menu/sf__login.xml"
+    }
+]

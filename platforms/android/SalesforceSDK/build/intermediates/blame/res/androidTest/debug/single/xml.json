@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceSDK/build/intermediates/res/merged/androidTest/debug/xml/servers.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceSDK/build/intermediates/bundles/debug/res/xml/servers.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceSDK/build/intermediates/res/merged/androidTest/debug/xml/app_restrictions.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceSDK/build/intermediates/bundles/debug/res/xml/app_restrictions.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceSDK/build/intermediates/res/merged/androidTest/debug/xml/authenticator.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceSDK/build/intermediates/bundles/debug/res/xml/authenticator.xml"
+    }
+]

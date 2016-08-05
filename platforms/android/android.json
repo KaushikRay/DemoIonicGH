@@ -1,0 +1,225 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PushNotification\"><param name=\"android-package\" value=\"com.adobe.phonegap.push.PushPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<allow-navigation href=\"https://localhost\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<allow-navigation href=\"https://*.force.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<allow-navigation href=\"https://*.salesforce.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://localhost\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.force.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.salesforce.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.oauth\"><param name=\"android-package\" value=\"com.salesforce.androidsdk.phonegap.plugin.SalesforceOAuthPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.sfaccountmanager\"><param name=\"android-package\" value=\"com.salesforce.androidsdk.phonegap.plugin.SFAccountManagerPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.sdkinfo\"><param name=\"android-package\" value=\"com.salesforce.androidsdk.phonegap.plugin.SDKInfoPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.smartstore\"><param name=\"android-package\" value=\"com.salesforce.androidsdk.phonegap.plugin.SmartStorePlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.smartsync\"><param name=\"android-package\" value=\"com.salesforce.androidsdk.phonegap.plugin.SmartSyncPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.google.android.c2dm.permission.RECEIVE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<permission android:name=\"${applicationId}.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"${applicationId}.permission.C2D_MESSAGE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:exported=\"true\" android:name=\"com.adobe.phonegap.push.PushHandlerActivity\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:exported=\"true\" android:name=\"com.google.android.gms.gcm.GcmReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><category android:name=\"${applicationId}\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:exported=\"false\" android:name=\"com.adobe.phonegap.push.GCMIntentService\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /></intent-filter></service>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:exported=\"false\" android:name=\"com.adobe.phonegap.push.PushInstanceIDListenerService\"><intent-filter><action android:name=\"com.google.android.gms.iid.InstanceID\" /></intent-filter></service>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:exported=\"false\" android:name=\"com.adobe.phonegap.push.RegistrationIntentService\"></service>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:configChanges=\"orientation|keyboardHidden|keyboard|screenSize|locale\" android:label=\"@string/app_name\" android:name=\"com.salesforce.androidsdk.phonegap.ui.SalesforceDroidGapActivity\" android:theme=\"@android:style/Theme.Black.NoTitleBar\"><intent-filter><action android:name=\"android.intent.action.MAIN\" /><category android:name=\"android.intent.category.LAUNCHER\" /></intent-filter></activity>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "res/values/strings.xml": {
+                "parents": {
+                    "/resources": [
+                        {
+                            "xml": "<string name=\"account_type\">com.ionicframework.gethappyv1446771.login</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"app_package\">com.ionicframework.gethappyv1446771</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.gethappyv1446771"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.gethappyv1446771"
+        },
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "com.ionicframework.gethappyv1446771"
+        },
+        "com.salesforce": {
+            "PACKAGE_NAME": "com.ionicframework.gethappyv1446771"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "file": "plugins/phonegap-plugin-push/www/push.js",
+            "id": "phonegap-plugin-push.PushNotification",
+            "clobbers": [
+                "PushNotification"
+            ]
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.oauth.js",
+            "id": "com.salesforce.plugin.oauth"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.sdkinfo.js",
+            "id": "com.salesforce.plugin.sdkinfo"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.smartstore.js",
+            "id": "com.salesforce.plugin.smartstore",
+            "clobbers": [
+                "navigator.smartstore"
+            ]
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.sfaccountmanager.js",
+            "id": "com.salesforce.plugin.sfaccountmanager"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.smartsync.js",
+            "id": "com.salesforce.plugin.smartsync"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.util.bootstrap.js",
+            "id": "com.salesforce.util.bootstrap"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.util.event.js",
+            "id": "com.salesforce.util.event"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.util.exec.js",
+            "id": "com.salesforce.util.exec"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.util.logger.js",
+            "id": "com.salesforce.util.logger"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.util.push.js",
+            "id": "com.salesforce.util.push"
+        }
+    ]
+}

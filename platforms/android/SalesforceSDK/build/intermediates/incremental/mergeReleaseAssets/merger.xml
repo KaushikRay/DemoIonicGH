@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceSDK/assets"/><source path="/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceSDK/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceSDK/src/release/assets"/></dataSet></merger>

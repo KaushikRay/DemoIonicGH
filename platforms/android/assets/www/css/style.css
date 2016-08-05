@@ -1,0 +1,10 @@
+/* Empty. Add your own CSS if you like */
+
+.modal.bottom-sheet {
+  bottom: 0;  
+  min-height: initial;
+  top: initial;
+  height: 30%;
+  border-width: 1px;
+  border-style: solid;
+}

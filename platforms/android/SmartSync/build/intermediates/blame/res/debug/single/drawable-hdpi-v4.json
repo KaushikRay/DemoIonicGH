@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartSync/build/intermediates/res/merged/debug/drawable-hdpi-v4/sf__highlight_glare.png",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartSync/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-hdpi-v4/sf__highlight_glare.png"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartSync/build/intermediates/res/merged/debug/drawable-hdpi-v4/sf__edit_icon.png",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartSync/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-hdpi-v4/sf__edit_icon.png"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartSync/build/intermediates/res/merged/debug/drawable-hdpi-v4/sf__icon.png",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartSync/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-hdpi-v4/sf__icon.png"
+    }
+]

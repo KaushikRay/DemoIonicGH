@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/src/main/jniLibs"/><source path="/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/libs"/></dataSet><dataSet config="debug"><source path="/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/src/debug/jniLibs"/></dataSet></merger>
