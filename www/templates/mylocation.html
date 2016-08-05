@@ -1,5 +1,25 @@
 <ion-view title="MY LOCATION">
+
     <ion-content>
+
+	<!-- <div class="buttons">
+        <button class="button button-icon ion-compose" ng-click="modal.show()">Test
+        </button><br/> -->
+      </div>
         <div id="map" style="width:100vh; height:100vh;" data-tap-disabled="true"></div>
+
     </ion-content>
+
+      <script id="templates/bottom-sheet.html" type="text/ng-template">
+      <ion-bottom-sheet-view>
+         <ion-header-bar align-title="left">
+            <h1 class="title">Contact Details</h1>
+            <button class="button button-icon icon ion-android-close" ng-click="modal.hide()"></button>
+        </ion-header-bar>
+        <ion-content class="has-header">
+          <ion-label>{{contactName}}</ion-label>
+        </ion-content>
+
+      </ion-bottom-sheet-view>
+    </script>
 </ion-view>
