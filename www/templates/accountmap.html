@@ -9,11 +9,23 @@
             </ion-nav-buttons>
         </ion-nav-bar>
         <ion-tabs class="tabs-positive tabs-icon-top">
-          <ion-tab title="My Location" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline">
+          <ion-tab title="Map" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline">
             <ion-nav-view name="mylocation"></ion-nav-view>
           </ion-tab>
 
-          <ion-tab title="All Accounts" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
+          <ion-tab title="Cards" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
+            <ion-nav-view name="allaccounts"></ion-nav-view>
+          </ion-tab>
+
+          <ion-tab title="Scan" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
+            <ion-nav-view name="allaccounts"></ion-nav-view>
+          </ion-tab>
+
+          <ion-tab title="Promotions" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
+            <ion-nav-view name="allaccounts"></ion-nav-view>
+          </ion-tab>
+
+          <ion-tab title="My Info" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
             <ion-nav-view name="allaccounts"></ion-nav-view>
           </ion-tab>
         </ion-tabs>
@@ -32,7 +44,7 @@
                     Accounts
                 </ion-item>
                 <ion-item menu-close href="#/accountmap/mylocation">
-                    Account Map
+                    Around
                 </ion-item>
                 <ion-item menu-close ng-click="logout()">
                     Logout
