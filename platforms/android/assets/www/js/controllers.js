@@ -117,7 +117,8 @@ angular.module('starter.controllers', ['starter.services', 'forceng'])
         currentPosition.then(
           function(position) {
             console.log('position data -->', position);
-            var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+            //var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+            var latLng = new google.maps.LatLng(52.50, 13.40);
             currentPositionLatLong = latLng;
 
             var mapOptions = {
@@ -127,6 +128,7 @@ angular.module('starter.controllers', ['starter.services', 'forceng'])
             };
 
             $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            console.log('get bounds -->', $scope.map.getBounds());
             directionsDisplay.setMap($scope.map);
             //var bounds = new google.maps.LatLngBounds();
             var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
@@ -164,12 +166,22 @@ angular.module('starter.controllers', ['starter.services', 'forceng'])
                   // Set boundary for markers in map
                   //bounds.extend(contactlatLng);
                 }
+                var options = {
+                    imagePath: 'images/m'
+                };
+
+                var markerCluster = new MarkerClusterer($scope.map, allMarkers, options);
+                google.maps.event.addListener($scope.map, 'idle', function() {
+                  console.log('North East -->', $scope.map.getBounds().getNorthEast().lat());
+                  console.log('South West -->', $scope.map.getBounds().getSouthWest().lat());
+                });
 
                 // Fit map based on markers
                 //$scope.map.fitBounds(bounds);
               }
-            );
 
+            );
+            
           }, 
           function(error) {
             console.log("Could not get location" + error);
