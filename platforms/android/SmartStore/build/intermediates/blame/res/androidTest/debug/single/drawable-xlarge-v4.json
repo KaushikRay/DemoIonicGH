@@ -36,12 +36,12 @@
         "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xlarge-v4/sf__progress_spinner.xml"
     },
     {
-        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/res/merged/androidTest/debug/drawable-xlarge-v4/sf__oauth_background.png",
-        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xlarge-v4/sf__oauth_background.png"
-    },
-    {
         "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/res/merged/androidTest/debug/drawable-xlarge-v4/sf__header_right_border.xml",
         "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xlarge-v4/sf__header_right_border.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/res/merged/androidTest/debug/drawable-xlarge-v4/sf__oauth_background.png",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xlarge-v4/sf__oauth_background.png"
     },
     {
         "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/res/merged/androidTest/debug/drawable-xlarge-v4/sf__oauth_container_dropshadow.9.png",

@@ -100,7 +100,7 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "phonegap-plugin-push/gethappyv1446771-push.gradle"
+apply from: "phonegap-plugin-push/gethappy-push.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()

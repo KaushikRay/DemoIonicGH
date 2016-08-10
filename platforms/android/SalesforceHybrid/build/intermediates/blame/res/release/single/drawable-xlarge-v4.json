@@ -20,12 +20,12 @@
         "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xlarge-v4/sf__header_left_border.xml"
     },
     {
-        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/drawable-xlarge-v4/sf__oauth_background.png",
-        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xlarge-v4/sf__oauth_background.png"
-    },
-    {
         "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/drawable-xlarge-v4/sf__header_refresh_states.xml",
         "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xlarge-v4/sf__header_refresh_states.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/drawable-xlarge-v4/sf__oauth_background.png",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xlarge-v4/sf__oauth_background.png"
     },
     {
         "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/drawable-xlarge-v4/sf__toolbar_background.xml",

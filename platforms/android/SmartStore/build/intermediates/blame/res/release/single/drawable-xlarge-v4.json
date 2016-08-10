@@ -40,12 +40,12 @@
         "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xlarge-v4/sf__header_refresh_states.xml"
     },
     {
-        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/res/merged/release/drawable-xlarge-v4/sf__nav_shadow.png",
-        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xlarge-v4/sf__nav_shadow.png"
-    },
-    {
         "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/res/merged/release/drawable-xlarge-v4/sf__progress_spinner.xml",
         "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xlarge-v4/sf__progress_spinner.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/res/merged/release/drawable-xlarge-v4/sf__nav_shadow.png",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/drawable-xlarge-v4/sf__nav_shadow.png"
     },
     {
         "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/res/merged/release/drawable-xlarge-v4/sf__header_bg.png",

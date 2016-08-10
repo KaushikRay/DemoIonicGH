@@ -39,6 +39,10 @@
                         {
                             "xml": "<feature name=\"com.salesforce.smartsync\"><param name=\"ios-package\" value=\"SFSmartSyncPlugin\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -56,6 +60,12 @@
                             "xml": "<dict><key>NSExceptionDomains</key><dict><key>salesforce.com</key><dict><key>NSIncludesSubdomains</key><true /><key>NSExceptionRequiresForwardSecrecy</key><false /></dict><key>force.com</key><dict><key>NSIncludesSubdomains</key><true /><key>NSExceptionRequiresForwardSecrecy</key><false /></dict></dict></dict>",
                             "count": 1
                         }
+                    ],
+                    "NSLocationWhenInUseUsageDescription": [
+                        {
+                            "xml": "<string />",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -63,16 +73,22 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.gethappyv1446771"
+            "PACKAGE_NAME": "cci.de.gethappy"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.gethappyv1446771"
+            "PACKAGE_NAME": "cci.de.gethappy"
         },
         "phonegap-plugin-push": {
-            "PACKAGE_NAME": "com.ionicframework.gethappyv1446771"
+            "PACKAGE_NAME": "cci.de.gethappy"
         },
         "com.salesforce": {
-            "PACKAGE_NAME": "com.ionicframework.gethappyv1446771"
+            "PACKAGE_NAME": "cci.de.gethappy"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "cci.de.gethappy"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "cci.de.gethappy"
         }
     },
     "dependent_plugins": {},
@@ -145,12 +161,46 @@
             "file": "plugins/com.salesforce/www/com.salesforce.util.push.js",
             "id": "com.salesforce.util.push",
             "pluginId": "com.salesforce"
+        },
+        {
+            "file": "plugins/cordova-plugin-geolocation/www/Coordinates.js",
+            "id": "cordova-plugin-geolocation.Coordinates",
+            "pluginId": "cordova-plugin-geolocation",
+            "clobbers": [
+                "Coordinates"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+            "id": "cordova-plugin-geolocation.PositionError",
+            "pluginId": "cordova-plugin-geolocation",
+            "clobbers": [
+                "PositionError"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-geolocation/www/Position.js",
+            "id": "cordova-plugin-geolocation.Position",
+            "pluginId": "cordova-plugin-geolocation",
+            "clobbers": [
+                "Position"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-geolocation/www/geolocation.js",
+            "id": "cordova-plugin-geolocation.geolocation",
+            "pluginId": "cordova-plugin-geolocation",
+            "clobbers": [
+                "navigator.geolocation"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.2.0",
         "cordova-plugin-device": "1.0.1",
         "phonegap-plugin-push": "1.5.0",
-        "com.salesforce": "4.2.0"
+        "com.salesforce": "4.2.0",
+        "cordova-plugin-compat": "1.0.0",
+        "cordova-plugin-geolocation": "2.2.0"
     }
 }

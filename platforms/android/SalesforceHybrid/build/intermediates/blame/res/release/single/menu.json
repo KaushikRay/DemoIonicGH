@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/menu/sf__clear_custom_url.xml",
-        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/menu/sf__clear_custom_url.xml"
-    },
-    {
         "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/menu/sf__login.xml",
         "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/menu/sf__login.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/res/merged/release/menu/sf__clear_custom_url.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SalesforceHybrid/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/menu/sf__clear_custom_url.xml"
     }
 ]

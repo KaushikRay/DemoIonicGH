@@ -4,11 +4,11 @@
         "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/xml/app_restrictions.xml"
     },
     {
-        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/res/merged/release/xml/authenticator.xml",
-        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/xml/authenticator.xml"
-    },
-    {
         "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/res/merged/release/xml/servers.xml",
         "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/xml/servers.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/res/merged/release/xml/authenticator.xml",
+        "source": "/Users/manishkumar/Documents/HybridApplications/DemoIonicGH/platforms/android/SmartStore/build/intermediates/exploded-aar/android/SalesforceSDK/unspecified/res/xml/authenticator.xml"
     }
 ]
